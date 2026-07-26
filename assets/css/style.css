@@ -1,67 +1,269 @@
-/* Base */
-html {
-    font-size: 16px;
+/* =====================================================
+   Youth4RuralTN
+   Typography
+   Version 2
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* ---------- Root ---------- */
+
+html{
+    font-size:16px;
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: "Manrope", sans-serif;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #334155;
+/* ---------- Body ---------- */
+
+body{
+
+    margin:0;
+    padding:0;
+
+    font-family:
+        "Manrope",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    font-size:16px;
+    font-weight:400;
+    line-height:1.65;
+
+    color:#334155;
+
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+
 }
 
-/* Logo */
-.logo strong {
-    font-size: 1.6rem;
-    font-weight: 800;
+/* ---------- Navigation ---------- */
+
+.navbar{
+
+    font-size:15px;
+
 }
 
-/* Navigation */
-.navbar a {
-    font-size: 1.05rem;
-    font-weight: 600;
+.navbar a{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:.02em;
+
 }
 
-/* Hero */
-.hero h1 {
-    font-size: clamp(2.8rem, 5vw, 4.5rem);
-    line-height: 1.1;
-    font-weight: 800;
-    margin-bottom: 1rem;
+.lang-switch{
+
+    font-size:14px;
+
+    font-weight:600;
+
 }
 
-.hero p {
-    font-size: 1.25rem;
-    line-height: 1.9;
-    max-width: 720px;
+/* ---------- Hero ---------- */
+
+.hero h1{
+
+    font-size:2.5rem;
+
+    line-height:1.12;
+
+    font-weight:700;
+
+    letter-spacing:-0.02em;
+
+    color:#0f172a;
+
+    margin-bottom:.75rem;
+
 }
 
-/* Section Titles */
-section h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    margin-bottom: 1rem;
+.hero p{
+
+    font-size:1.05rem;
+
+    max-width:680px;
+
+    line-height:1.8;
+
+    color:#475569;
+
 }
 
-/* Cards */
-.card h3 {
-    font-size: 1.5rem;
+/* ---------- Sections ---------- */
+
+section h2{
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    margin-bottom:1rem;
+
+    color:#0f172a;
+
 }
 
-.card p {
-    font-size: 1.1rem;
+.card h3{
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    margin-bottom:.5rem;
+
 }
 
-/* Body */
-p,
-li {
-    font-size: 1.1rem;
-    line-height: 1.9;
+.card p{
+
+    font-size:1rem;
+
+    line-height:1.8;
+
 }
 
-/* Buttons */
+/* ---------- Paragraphs ---------- */
+
+p{
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    color:#475569;
+
+}
+
+li{
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+/* ---------- Buttons ---------- */
+
+button,
 .btn-primary,
-.btn-secondary {
-    font-size: 1.1rem;
-    padding: 16px 32px;
-    border-radius: 10px;
+.btn-secondary{
+
+    font-family:inherit;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    font-size:.9rem;
+
+    color:#64748b;
+
+}
+
+/* =====================================================
+   Tamil
+===================================================== */
+
+html[lang="ta"] body{
+
+    font-family:
+
+        "Latha",
+
+        "Nirmala UI",
+
+        "Tamil MN",
+
+        "Noto Serif Tamil",
+
+        serif;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    letter-spacing:0;
+
+}
+
+html[lang="ta"] h1,
+html[lang="ta"] h2,
+html[lang="ta"] h3{
+
+    font-family:
+
+        "Latha",
+
+        "Nirmala UI",
+
+        "Tamil MN",
+
+        "Noto Serif Tamil",
+
+        serif;
+
+    font-weight:600;
+
+    line-height:1.35;
+
+    letter-spacing:0;
+
+}
+
+html[lang="ta"] p,
+html[lang="ta"] li{
+
+    line-height:2;
+
+}
+
+/* =====================================================
+   Mobile
+===================================================== */
+
+@media (max-width:768px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    section h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .card h3{
+
+        font-size:1.1rem;
+
+    }
+
 }
