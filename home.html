@@ -1,499 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rural Integrated Economy | Youth4RuralTN</title>
 
-<link rel="stylesheet" href="assets/css/style.css">
-<h1>Rural Integrated Economy</h1>
+<title>Youth4RuralTN</title>
 
-<p>
-Connecting Creativity, Technology and Rural Enterprise
-</p>
+<style>
 
-<a href="#vision" class="btn">
-<section id="vision">
-
-    <h2>Vision</h2>
-
-    <p class="lead">
-        Rural Integrated Economy connects creativity, engineering, manufacturing,
-        entrepreneurship and communities into one collaborative ecosystem that
-        creates sustainable local enterprises and skilled employment.
-    </p>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>💡 Local Innovation</h3>
-            <p>
-                Encourage problem-solving through local ideas,
-                open collaboration and practical engineering.
-            </p>
-
-            <a href="https://en.wikipedia.org/wiki/Innovation_ecosystem" target="_blank">
-                Learn More →
-            </a>
-
-        </div>
-
-        <div class="card">
-            <h3>🏭 Distributed Manufacturing</h3>
-            <p>
-                Produce closer to where products are needed,
-                reducing cost while increasing local ownership.
-            </p>
-
-            <a href="https://en.wikipedia.org/wiki/Open_manufacturing" target="_blank">
-                Learn More →
-            </a>
-
-        </div>
-
-        <div class="card">
-            <h3>🌍 Sustainable Communities</h3>
-            <p>
-                Build resilient villages through technology,
-                entrepreneurship and lifelong learning.
-            </p>
-
-            <a href="https://sdgs.un.org/goals" target="_blank">
-                UN Sustainable Development Goals →
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-</a><style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:Segoe UI,Arial,sans-serif;
 }
 
 body{
-background:#0d1117;
-color:#fff;
-line-height:1.7;
-}
 
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#111827;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 8%;
-z-index:1000;
-box-shadow:0 5px 20px rgba(0,0,0,.35);
-}
+font-family:
+"Segoe UI",
+Arial,
+sans-serif;
 
-.logo{
-font-size:24px;
-font-weight:bold;
-color:#00d084;
-}
+background:
+linear-gradient(135deg,#eef9f5,#f7fbff);
 
-nav a{
-color:#fff;
-text-decoration:none;
-margin-left:25px;
-transition:.3s;
-}
-
-nav a:hover{
-color:#00d084;
-}
-
-.hero{
 height:100vh;
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#0d1117,#111827,#14532d);
-}
 
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
+color:#1f2937;
 
-.hero p{
-font-size:22px;
-max-width:900px;
-margin:auto;
-}
-
-.btn{
-display:inline-block;
-margin-top:40px;
-padding:15px 35px;
-background:#00d084;
-color:#000;
-text-decoration:none;
-font-weight:bold;
-border-radius:8px;
-}
-
-section{
-padding:100px 10%;
-}
-
-h2{
-margin-bottom:30px;
-color:#00d084;
-font-size:36px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:40px;
 }
 
 .card{
-background:#161b22;
-padding:25px;
-border-radius:12px;
-transition:.3s;
-}
 
-.card:hover{
-transform:translateY(-8px);
-}
+background:#ffffff;
 
-.flow{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-margin-top:50px;
+padding:60px;
+
+border-radius:24px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.10);
+
+max-width:700px;
+
+width:90%;
+
 text-align:center;
+
 }
 
-.step{
-padding:25px;
-background:#161b22;
-border-radius:10px;
-font-weight:bold;
+.logo{
+
+font-size:54px;
+
+font-weight:800;
+
+color:#0b6b50;
+
+margin-bottom:15px;
+
+}
+
+h1{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+color:#64748b;
+
+}
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:18px 36px;
+
+border-radius:12px;
+
+font-size:20px;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.english{
+
+background:#0b6b50;
+
+color:#fff;
+
+}
+
+.english:hover{
+
+background:#09513d;
+
+}
+
+.tamil{
+
+background:#2c7be5;
+
+color:#fff;
+
+}
+
+.tamil:hover{
+
+background:#1e63bf;
+
 }
 
 footer{
-background:#111827;
-text-align:center;
-padding:30px;
-margin-top:80px;
+
+margin-top:40px;
+
+font-size:15px;
+
+color:#64748b;
+
 }
 
 @media(max-width:768px){
 
-header{
-flex-direction:column;
+.card{
+
+padding:35px;
+
 }
 
-nav{
-margin-top:15px;
+h1{
+
+font-size:30px;
+
 }
 
-nav a{
-display:inline-block;
-margin:10px;
-}
+p{
 
-.hero h1{
-font-size:38px;
-}
-
-.hero p{
 font-size:18px;
+
+}
+
+.btn{
+
+width:100%;
+
 }
 
 }
+
 </style>
 
 </head>
 
 <body>
 
-<header>
+<div class="card">
 
 <div class="logo">
+
 RIE
+
 </div>
 
-<nav>
+<h1>
 
-<a href="#home">Home</a>
+Youth4RuralTN
 
-<a href="#vision">Vision</a>
-
-<a href="#ecosystem">Ecosystem</a>
-
-<a href="#projects">Projects</a>
-
-<a href="#community">Community</a>
-
-<a href="#resources">Resources</a>
-
-</nav>
-
-</header>
-
-<section class="hero" id="home">
-
-<div>
-
-<h1>Rural Integrated Economy</h1>
+</h1>
 
 <p>
-Connecting Creativity, Technology and Rural Enterprise
+
+Welcome to the Rural Integrated Economy initiative.
+
+Please choose your preferred language to continue.
+
 </p>
 
-<a href="#vision" class="btn">
-Explore the Ecosystem
+<div class="buttons">
+
+<a class="btn english" href="en/index.html">
+
+English
+
+</a>
+
+<a class="btn tamil" href="ta/index.html">
+
+தமிழ்
+
 </a>
 
 </div>
 
-</section>
-
-<section id="vision">
-
-<h2>Vision</h2>
-
-<p>
-
-The Rural Integrated Economy connects creativity, engineering, software, hardware,
-manufacturing and entrepreneurship into one collaborative ecosystem that creates value added local produce and utilizing available talents for a
-sustainable employment in villages.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Innovation</h3>
-
-<p>Create practical technology for URBAN communities.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Local Production</h3>
-
-<p>Design and manufacture products closer to where they are needed.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Employment</h3>
-
-<p>Create skilled jobs through technology-driven enterprises.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="ecosystem">
-
-<h2>Ecosystem</h2>
-
-<div class="flow">
-
-<div class="step">Creative Assets</div>
-
-<div class="step">Design</div>
-
-<div class="step">Software</div>
-
-<div class="step">Hardware</div>
-
-<div class="step">Manufacturing</div>
-
-<div class="step">Village Enterprise</div>
-
-<div class="step">Employment</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>AI</h3>
-
-<p>Artificial Intelligence for local industries.</p>
-
-</div>
-
-<div class="card">
-
-<h3>IoT</h3>
-
-<p>Smart farming and monitoring systems.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Agriculture</h3>
-
-<p>Digital tools supporting farmers and cooperatives.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Education</h3>
-
-<p>Learning platforms for rural innovation.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Healthcare</h3>
-
-<p>Technology-enabled community healthcare.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Manufacturing</h3>
-
-<p>Open-source product development and fabrication.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="community">
-
-<h2>Community</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Developers</h3>
-
-</div>
-
-<div class="card">
-
-<h3>Designers</h3>
-
-</div>
-
-<div class="card">
-
-<h3>Hardware Engineers</h3>
-
-</div>
-
-<div class="card">
-
-<h3>Students</h3>
-
-</div>
-
-<div class="card">
-
-<h3>Entrepreneurs</h3>
-
-</div>
-
-<div class="card">
-
-<h3>Village Innovators</h3>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="resources">
-
-<h2>Resources</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Whitepaper</h3>
-
-</div>
-
-<div class="card">
-
-<h3>Documentation</h3>
-
-</div>
-
-<div class="card">
-
-<h3>GitHub</h3>
-
-</div>
-
-<div class="card">
-
-<h3>Downloads</h3>
-
-</div>
-
-<div class="card">
-
-<h3>Templates</h3>
-
-</div>
-
-<div class="card">
-
-<h3>Contact</h3>
-
-</div>
-
-</div>
-
-</section>
-
 <footer>
 
-<p>
-
-© 2026 Rural Integrated Economy • Youth4RuralTN
-
-</p>
+&copy; 2026 Youth4RuralTN • Rural Integrated Economy
 
 </footer>
 
-<script src="assets/js/app.js"></script>
+</div>
 
 </body>
+
 </html>
