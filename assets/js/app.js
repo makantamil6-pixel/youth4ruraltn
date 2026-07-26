@@ -1,19 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
     const agree = document.getElementById("agree");
-    const button = document.getElementById("continueBtn");
+    const continueBtn = document.getElementById("continueBtn");
 
-    button.disabled = true;
+    continueBtn.disabled = true;
 
-    agree.addEventListener("change", () => {
-        button.disabled = !agree.checked;
+    agree.addEventListener("change", function () {
+        continueBtn.disabled = !agree.checked;
     });
 
-    button.addEventListener("click", () => {
+    continueBtn.addEventListener("click", function () {
 
-        if (agree.checked) {
-            window.location.href = "en/index.html";
-        }
+        if (!agree.checked) return;
+
+        // Redirect to the English homepage
+        window.location.href = "en/index.html";
 
     });
 

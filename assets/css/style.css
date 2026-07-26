@@ -1,19 +1,23 @@
 /* =====================================================
    Youth4RuralTN
    Typography
-   Version 2
+   Version 3
 ===================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
-/* ---------- Root ---------- */
+/* =====================================================
+   Root
+===================================================== */
 
 html{
     font-size:16px;
     scroll-behavior:smooth;
 }
 
-/* ---------- Body ---------- */
+/* =====================================================
+   Body
+===================================================== */
 
 body{
 
@@ -31,7 +35,7 @@ body{
 
     font-size:16px;
     font-weight:400;
-    line-height:1.65;
+    line-height:1.75;
 
     color:#334155;
 
@@ -41,7 +45,9 @@ body{
 
 }
 
-/* ---------- Navigation ---------- */
+/* =====================================================
+   Navigation
+===================================================== */
 
 .navbar{
 
@@ -52,90 +58,104 @@ body{
 .navbar a{
 
     font-size:15px;
-
     font-weight:600;
-
     letter-spacing:.02em;
+    text-decoration:none;
+
+}
+
+.navbar a:hover{
+
+    opacity:.8;
 
 }
 
 .lang-switch{
 
     font-size:14px;
-
     font-weight:600;
 
 }
 
-/* ---------- Hero ---------- */
+/* =====================================================
+   Hero
+===================================================== */
 
 .hero h1{
 
-    font-size:2.5rem;
-
-    line-height:1.12;
-
+    font-size:2.1rem;
     font-weight:700;
-
-    letter-spacing:-0.02em;
+    line-height:1.2;
+    letter-spacing:-0.015em;
 
     color:#0f172a;
 
-    margin-bottom:.75rem;
+    max-width:18ch;
+
+    margin:0 0 .6rem;
 
 }
 
 .hero p{
 
-    font-size:1.05rem;
-
-    max-width:680px;
-
+    font-size:1rem;
     line-height:1.8;
+
+    max-width:640px;
 
     color:#475569;
 
 }
 
-/* ---------- Sections ---------- */
+/* =====================================================
+   Sections
+===================================================== */
 
 section h2{
 
-    font-size:1.8rem;
-
+    font-size:1.55rem;
     font-weight:700;
-
-    margin-bottom:1rem;
 
     color:#0f172a;
 
+    margin-bottom:.85rem;
+
 }
+
+section{
+
+    margin-bottom:4rem;
+
+}
+
+/* =====================================================
+   Cards
+===================================================== */
 
 .card h3{
 
-    font-size:1.2rem;
-
+    font-size:1.08rem;
     font-weight:700;
 
-    margin-bottom:.5rem;
+    margin-bottom:.45rem;
 
 }
 
 .card p{
 
-    font-size:1rem;
-
-    line-height:1.8;
+    font-size:.98rem;
+    line-height:1.85;
 
 }
 
-/* ---------- Paragraphs ---------- */
+/* =====================================================
+   Paragraphs
+===================================================== */
 
 p{
 
-    font-size:1rem;
-
-    line-height:1.8;
+    font-size:.98rem;
+    line-height:1.85;
 
     color:#475569;
 
@@ -143,13 +163,14 @@ p{
 
 li{
 
-    font-size:1rem;
-
-    line-height:1.8;
+    font-size:.98rem;
+    line-height:1.85;
 
 }
 
-/* ---------- Buttons ---------- */
+/* =====================================================
+   Buttons
+===================================================== */
 
 button,
 .btn-primary,
@@ -158,17 +179,17 @@ button,
     font-family:inherit;
 
     font-size:.95rem;
-
     font-weight:600;
 
 }
 
-/* ---------- Footer ---------- */
+/* =====================================================
+   Footer
+===================================================== */
 
 footer{
 
     font-size:.9rem;
-
     color:#64748b;
 
 }
@@ -180,22 +201,16 @@ footer{
 html[lang="ta"] body{
 
     font-family:
-
         "Latha",
-
         "Nirmala UI",
-
         "Tamil MN",
-
         "Noto Serif Tamil",
-
         serif;
 
     font-size:16px;
+    line-height:2;
 
-    line-height:1.9;
-
-    letter-spacing:0;
+    letter-spacing:.01em;
 
 }
 
@@ -204,20 +219,15 @@ html[lang="ta"] h2,
 html[lang="ta"] h3{
 
     font-family:
-
         "Latha",
-
         "Nirmala UI",
-
         "Tamil MN",
-
         "Noto Serif Tamil",
-
         serif;
 
-    font-weight:600;
+    font-weight:500;
 
-    line-height:1.35;
+    line-height:1.45;
 
     letter-spacing:0;
 
@@ -244,25 +254,26 @@ html[lang="ta"] li{
 
     .hero h1{
 
-        font-size:2rem;
+        font-size:1.75rem;
+        line-height:1.25;
 
     }
 
     .hero p{
 
-        font-size:1rem;
+        font-size:.98rem;
 
     }
 
     section h2{
 
-        font-size:1.5rem;
+        font-size:1.4rem;
 
     }
 
     .card h3{
 
-        font-size:1.1rem;
+        font-size:1.05rem;
 
     }
 
