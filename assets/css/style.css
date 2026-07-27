@@ -889,3 +889,17 @@ html[lang="ta"] li{
     }
 
 }
+.participation-policy{
+    grid-column:1 / -1;
+    border-left:6px solid #8b0000;
+    background:#fffaf5;
+}
+
+.participation-policy h3{
+    color:#8b0000;
+    margin-bottom:1rem;
+}
+
+.participation-policy p{
+    margin-bottom:1rem;
+}
