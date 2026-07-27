@@ -891,15 +891,27 @@ html[lang="ta"] li{
 }
 .participation-policy{
     grid-column:1 / -1;
-    border-left:6px solid #8b0000;
-    background:#fffaf5;
+    background:#ffeaea;
+    border:2px solid #b30000;
+    border-left:8px solid #b30000;
+    padding:2rem;
+    color:#b30000;
 }
 
 .participation-policy h3{
-    color:#8b0000;
+    color:#b30000;
+    font-size:1.8rem;
     margin-bottom:1rem;
+    text-transform:uppercase;
 }
 
 .participation-policy p{
+    color:#b30000;
     margin-bottom:1rem;
+    line-height:1.8;
+}
+
+.participation-policy strong{
+    color:#8b0000;
+    font-weight:700;
 }
