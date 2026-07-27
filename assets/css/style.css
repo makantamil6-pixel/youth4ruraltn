@@ -190,21 +190,33 @@ nav a:hover{
 }
 
 .hero h1{
-
-    font-size:clamp(2.6rem,5vw,4.4rem);
-
-    line-height:1.1;
-
-    font-weight:800;
-
+    font-size:clamp(2rem,4vw,3rem);
+    line-height:1.2;
+    font-weight:700;
     color:#0f172a;
-
-    max-width:14ch;
-
-    margin-bottom:24px;
-
+    max-width:18ch;
+    margin-bottom:20px;
 }
 
+section h2{
+    font-size:clamp(1.6rem,3vw,2.2rem);
+    line-height:1.25;
+    font-weight:700;
+    color:#0f172a;
+    margin-bottom:18px;
+}
+
+.card h3{
+    font-size:1.25rem;
+    font-weight:700;
+    color:#0b6b50;
+    margin-bottom:12px;
+}
+
+body{
+    font-size:17px;
+    line-height:1.8;
+}
 .hero p{
 
     max-width:760px;
