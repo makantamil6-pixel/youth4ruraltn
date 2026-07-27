@@ -1,8 +1,12 @@
-/* =====================================================
-   PART 1 - RESET + LAYOUT + NAVIGATION
-===================================================== */
+/*=====================================================
+  Youth4RuralTN / Rural Integrated Economy
+  Complete Stylesheet
+  Part 1 - Reset + Base + Typography
+======================================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+Tamil:wght@400;500;600;700&display=swap');
+
+/* ---------- Reset ---------- */
 
 *{
     margin:0;
@@ -17,16 +21,16 @@ html{
 
 body{
 
+    background:#ffffff;
+    color:#334155;
+
     font-family:
         "Manrope",
         Arial,
         sans-serif;
 
-    font-size:18px;
+    font-size:17px;
     line-height:1.8;
-
-    color:#334155;
-    background:#ffffff;
 
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
@@ -34,54 +38,125 @@ body{
 }
 
 img{
-    max-width:100%;
+
     display:block;
+    max-width:100%;
+    height:auto;
+
 }
 
 a{
-    text-decoration:none;
+
     color:inherit;
+    text-decoration:none;
+
 }
 
 ul{
+
     list-style:none;
+
 }
 
-/* =====================================================
-   CONTAINER
-===================================================== */
+/* ---------- Containers ---------- */
 
+.container,
 .navbar,
-.section-container,
-.hero-content{
+.hero-content,
+.section-container{
 
+    width:100%;
     max-width:1200px;
-    margin:auto;
+
+    margin:0 auto;
+
     padding-left:24px;
     padding-right:24px;
 
 }
 
-/* =====================================================
-   HEADER
-===================================================== */
+/* ---------- General Typography ---------- */
+
+h1,
+h2,
+h3{
+
+    color:#0f172a;
+
+    font-weight:700;
+
+    line-height:1.25;
+
+}
+
+.hero h1{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    max-width:18ch;
+
+    margin-bottom:20px;
+
+}
+
+section h2{
+
+    font-size:clamp(1.7rem,3vw,2.2rem);
+
+    margin-bottom:18px;
+
+}
+
+.card h3{
+
+    font-size:1.25rem;
+
+    margin-bottom:12px;
+
+    color:#0b6b50;
+
+}
+
+p{
+
+    font-size:1rem;
+
+    line-height:1.85;
+
+    color:#475569;
+
+    margin-bottom:18px;
+
+}
+
+li{
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+/*=====================================================
+  Part 2 - Header + Navigation
+======================================================*/
+
+/* ---------- Header ---------- */
 
 header{
 
     position:sticky;
     top:0;
+    z-index:1000;
 
     background:#ffffff;
 
     border-bottom:1px solid #e5e7eb;
 
-    z-index:1000;
+    box-shadow:0 2px 10px rgba(15,23,42,.04);
 
 }
 
-/* =====================================================
-   NAVBAR
-===================================================== */
+/* ---------- Navigation ---------- */
 
 .navbar{
 
@@ -90,35 +165,65 @@ header{
     justify-content:space-between;
     align-items:center;
 
-    min-height:78px;
+    min-height:76px;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
 
 }
 
 .logo strong{
 
-    font-size:1.5rem;
+    color:#0b6b50;
+
+    font-size:1.45rem;
+
     font-weight:800;
 
-    color:#0b6b50;
+    white-space:nowrap;
+
+}
+
+/* ---------- Menu ---------- */
+
+nav{
+
+    display:flex;
+    align-items:center;
 
 }
 
 nav ul{
 
     display:flex;
+
     align-items:center;
+
     gap:28px;
+
+}
+
+nav li{
+
+    margin:0;
 
 }
 
 nav a{
 
-    font-size:1rem;
+    display:inline-block;
+
+    font-size:.96rem;
+
     font-weight:600;
 
     color:#334155;
 
-    transition:.25s;
+    transition:color .25s ease;
 
 }
 
@@ -128,56 +233,108 @@ nav a:hover{
 
 }
 
+/* ---------- Language Switch ---------- */
+
 .lang-switch{
 
     display:flex;
+
     align-items:center;
+
     gap:10px;
+
+    margin-left:20px;
+
+    padding-left:20px;
+
+    border-left:1px solid #e5e7eb;
+
+}
+
+.lang-switch span{
+
+    color:#94a3b8;
+
+}
+
+.lang-switch a{
+
+    font-weight:700;
 
 }
 
 .lang-switch .active{
 
     color:#0b6b50;
-    font-weight:700;
 
 }
 
-/* =====================================================
-   MOBILE NAV
-===================================================== */
+/* ---------- Mobile Navigation ---------- */
 
 @media (max-width:768px){
 
     .navbar{
 
         flex-direction:column;
-        gap:20px;
 
-        padding-top:18px;
-        padding-bottom:18px;
+        justify-content:center;
+
+        gap:18px;
+
+        padding:18px 24px;
+
+    }
+
+    .logo strong{
+
+        font-size:1.25rem;
+
+        text-align:center;
+
+        white-space:normal;
+
+    }
+
+    nav{
+
+        width:100%;
 
     }
 
     nav ul{
 
-        flex-wrap:wrap;
+        width:100%;
+
         justify-content:center;
+
+        flex-wrap:wrap;
+
         gap:14px;
 
     }
 
+    .lang-switch{
+
+        margin-left:0;
+
+        padding-left:0;
+
+        border-left:none;
+
+    }
+
 }
-/* =====================================================
-   PART 2 - HERO + BUTTONS
-===================================================== */
+/*=====================================================
+  Part 3 - Hero + Buttons
+======================================================*/
+
+/* ---------- Hero ---------- */
 
 .hero{
 
-    background:
-    linear-gradient(135deg,#f8fcfb,#eef8f4);
+    background:linear-gradient(135deg,#f8fcfb,#eef8f4);
 
-    padding:100px 0;
+    padding:90px 0;
 
 }
 
@@ -190,60 +347,50 @@ nav a:hover{
 }
 
 .hero h1{
+
     font-size:clamp(2rem,4vw,3rem);
+
+    font-weight:700;
+
     line-height:1.2;
-    font-weight:700;
+
     color:#0f172a;
+
     max-width:18ch;
+
     margin-bottom:20px;
+
 }
 
-section h2{
-    font-size:clamp(1.6rem,3vw,2.2rem);
-    line-height:1.25;
-    font-weight:700;
-    color:#0f172a;
-    margin-bottom:18px;
-}
-
-.card h3{
-    font-size:1.25rem;
-    font-weight:700;
-    color:#0b6b50;
-    margin-bottom:12px;
-}
-
-body{
-    font-size:17px;
-    line-height:1.8;
-}
 .hero p{
 
-    max-width:760px;
+    max-width:720px;
 
-    font-size:1.15rem;
+    font-size:1.05rem;
 
     line-height:1.9;
 
     color:#475569;
 
-    margin-bottom:40px;
+    margin-bottom:36px;
 
 }
+
+/* ---------- Hero Buttons ---------- */
 
 .hero-buttons{
 
     display:flex;
 
-    gap:18px;
+    align-items:center;
+
+    gap:16px;
 
     flex-wrap:wrap;
 
 }
 
-/* =====================================================
-   BUTTONS
-===================================================== */
+/* ---------- Buttons ---------- */
 
 .btn-primary,
 .btn-secondary{
@@ -253,17 +400,21 @@ body{
     align-items:center;
     justify-content:center;
 
-    min-width:220px;
+    min-width:210px;
 
-    padding:15px 30px;
+    padding:14px 28px;
 
     border-radius:10px;
 
-    font-size:1rem;
+    font-size:.95rem;
 
     font-weight:700;
 
-    transition:.25s ease;
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
 
 }
 
@@ -273,13 +424,19 @@ body{
 
     color:#ffffff;
 
+    border:2px solid #0b6b50;
+
 }
 
 .btn-primary:hover{
 
     background:#09513d;
 
+    border-color:#09513d;
+
     transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(11,107,80,.18);
 
 }
 
@@ -301,11 +458,11 @@ body{
 
     transform:translateY(-2px);
 
+    box-shadow:0 8px 20px rgba(11,107,80,.18);
+
 }
 
-/* =====================================================
-   MOBILE HERO
-===================================================== */
+/* ---------- Mobile Hero ---------- */
 
 @media (max-width:768px){
 
@@ -315,9 +472,15 @@ body{
 
     }
 
+    .hero-content{
+
+        align-items:flex-start;
+
+    }
+
     .hero h1{
 
-        font-size:2.5rem;
+        font-size:2rem;
 
     }
 
@@ -330,7 +493,10 @@ body{
     .hero-buttons{
 
         width:100%;
+
         flex-direction:column;
+
+        align-items:stretch;
 
     }
 
@@ -344,13 +510,15 @@ body{
     }
 
 }
-/* =====================================================
-   PART 3 - SECTIONS + CARDS
-===================================================== */
+/*=====================================================
+  Part 4 - Sections + Cards
+======================================================*/
+
+/* ---------- Sections ---------- */
 
 section{
 
-    padding:90px 0;
+    padding:80px 0;
 
 }
 
@@ -360,35 +528,31 @@ section{
 
 }
 
+/* ---------- Section Heading ---------- */
+
 section h2{
 
-    font-size:clamp(2rem,4vw,3rem);
+    font-size:clamp(1.7rem,3vw,2.2rem);
 
-    font-weight:800;
+    font-weight:700;
 
     color:#0f172a;
 
-    margin-bottom:20px;
+    margin-bottom:18px;
 
 }
 
 section p{
 
-    font-size:1.08rem;
-
-    line-height:1.9;
+    max-width:760px;
 
     color:#475569;
 
     margin-bottom:20px;
 
-    max-width:760px;
-
 }
 
-/* =====================================================
-   GRID
-===================================================== */
+/* ---------- Cards Grid ---------- */
 
 .cards{
 
@@ -397,93 +561,82 @@ section p{
     grid-template-columns:
         repeat(auto-fit,minmax(280px,1fr));
 
-    gap:30px;
+    gap:28px;
 
-    margin-top:50px;
+    margin-top:40px;
 
 }
 
-/* =====================================================
-   CARD
-===================================================== */
+/* ---------- Card ---------- */
 
 .card{
 
     background:#ffffff;
 
-    border:1px solid #e5e7eb;
+    border:1px solid #e2e8f0;
 
-    border-radius:18px;
+    border-radius:16px;
 
-    padding:32px;
+    padding:28px;
 
-    transition:.30s ease;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
 
     box-shadow:
-        0 10px 25px rgba(15,23,42,.04);
+        0 6px 18px rgba(15,23,42,.05);
 
 }
 
 .card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
+
+    border-color:#0b6b50;
 
     box-shadow:
-        0 20px 45px rgba(15,23,42,.10);
-
-    border-color:#cbd5e1;
+        0 16px 32px rgba(15,23,42,.10);
 
 }
 
 .card h3{
 
-    font-size:1.45rem;
-
-    font-weight:700;
-
     color:#0b6b50;
 
-    margin-bottom:16px;
+    margin-bottom:12px;
 
 }
 
 .card p{
 
-    font-size:1rem;
-
-    line-height:1.85;
+    margin:0;
 
     color:#475569;
 
-    margin:0;
-
 }
 
-/* =====================================================
-   LISTS
-===================================================== */
+/* ---------- Lists ---------- */
 
 section ul{
 
-    margin-top:20px;
+    margin-top:18px;
 
-    padding-left:22px;
+    padding-left:20px;
 
 }
 
-section li{
+section ul li{
 
-    margin-bottom:12px;
+    list-style:disc;
+
+    margin-bottom:10px;
 
     color:#475569;
 
-    line-height:1.8;
-
 }
 
-/* =====================================================
-   ALTERNATE SECTION BACKGROUND
-===================================================== */
+/* ---------- Alternate Background ---------- */
 
 section:nth-of-type(even){
 
@@ -491,15 +644,13 @@ section:nth-of-type(even){
 
 }
 
-/* =====================================================
-   MOBILE
-===================================================== */
+/* ---------- Mobile ---------- */
 
 @media (max-width:768px){
 
     section{
 
-        padding:70px 0;
+        padding:60px 0;
 
     }
 
@@ -513,32 +664,26 @@ section:nth-of-type(even){
 
     .card{
 
-        padding:24px;
-
-    }
-
-    .card h3{
-
-        font-size:1.3rem;
+        padding:22px;
 
     }
 
 }
-/* =====================================================
-   PART 4 - FOOTER + TAMIL + GLOBAL + MOBILE FINISH
-===================================================== */
+/*=====================================================
+  Part 5 - Footer + Tamil + Responsive Finish
+======================================================*/
 
-/* FOOTER */
+/* ---------- Footer ---------- */
 
 footer{
+
+    margin-top:80px;
 
     background:#0f172a;
 
     color:#cbd5e1;
 
     padding:50px 0;
-
-    margin-top:80px;
 
 }
 
@@ -570,7 +715,7 @@ footer a{
 
     color:#ffffff;
 
-    transition:.25s;
+    transition:color .25s ease;
 
 }
 
@@ -580,9 +725,7 @@ footer a:hover{
 
 }
 
-/* =====================================================
-   TAMIL
-===================================================== */
+/* ---------- Tamil Typography ---------- */
 
 html[lang="ta"] body{
 
@@ -594,7 +737,7 @@ html[lang="ta"] body{
 
     font-size:17px;
 
-    line-height:1.95;
+    line-height:1.9;
 
 }
 
@@ -617,15 +760,11 @@ html[lang="ta"] h3{
 html[lang="ta"] p,
 html[lang="ta"] li{
 
-    font-size:1.05rem;
-
     line-height:2;
 
 }
 
-/* =====================================================
-   UTILITIES
-===================================================== */
+/* ---------- Utility Classes ---------- */
 
 .text-center{
 
@@ -633,47 +772,34 @@ html[lang="ta"] li{
 
 }
 
-.mt-2{
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
 
-    margin-top:20px;
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
 
-}
+/* ---------- Large Screens ---------- */
 
-.mt-3{
+@media (min-width:1400px){
 
-    margin-top:30px;
+    .container,
+    .navbar,
+    .hero-content,
+    .section-container{
 
-}
+        max-width:1280px;
 
-.mt-4{
-
-    margin-top:40px;
-
-}
-
-.mb-2{
-
-    margin-bottom:20px;
-
-}
-
-.mb-3{
-
-    margin-bottom:30px;
+    }
 
 }
 
-.mb-4{
+/* ---------- Tablets ---------- */
 
-    margin-bottom:40px;
-
-}
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width:768px){
+@media (max-width:992px){
 
     body{
 
@@ -681,20 +807,35 @@ html[lang="ta"] li{
 
     }
 
-    .section-container,
+    .container,
+    .navbar,
     .hero-content,
-    .navbar{
+    .section-container{
 
-        padding-left:18px;
-        padding-right:18px;
+        padding-left:20px;
+        padding-right:20px;
 
     }
 
-    .logo strong{
+}
 
-        font-size:1.3rem;
+/* ---------- Mobile ---------- */
 
-        text-align:center;
+@media (max-width:768px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    .container,
+    .navbar,
+    .hero-content,
+    .section-container{
+
+        padding-left:18px;
+        padding-right:18px;
 
     }
 
@@ -710,21 +851,40 @@ html[lang="ta"] li{
 
         padding:40px 0;
 
+        margin-top:60px;
+
     }
 
 }
 
-/* =====================================================
-   LARGE SCREENS
-===================================================== */
+/* ---------- Small Phones ---------- */
 
-@media (min-width:1400px){
+@media (max-width:480px){
 
-    .navbar,
-    .section-container,
-    .hero-content{
+    .hero h1{
 
-        max-width:1280px;
+        font-size:1.75rem;
+
+    }
+
+    section h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .logo strong{
+
+        font-size:1.15rem;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+        min-width:auto;
 
     }
 
