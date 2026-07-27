@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rural Integrated Economy</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rural Integrated Economy</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f4f7f9;
+}
+
+.landing{
+
+    max-width:700px;
+    text-align:center;
+    background:#fff;
+    padding:50px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.landing h1{
+
+    margin-bottom:20px;
+
+}
+
+.landing p{
+
+    margin-bottom:35px;
+
+}
+
+.buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-<div class="container">
+<div class="landing">
 
-    <div class="card">
+<h1>Rural Integrated Economy (RIE)</h1>
 
-        <h1>⚠ Disclaimer</h1>
+<p>
 
-        <h2>Rural Integrated Economy</h2>
+Building Local Innovation • Creating Local Employment
 
-        <p class="tagline">
-            Building Local Innovation • Creating Local Employment
-        </p>
+</p>
 
-        <hr>
+<div class="buttons">
 
-        <h3>தமிழில்</h3>
+<a class="btn-primary" href="en/index.html">
 
-        <p>
-            இந்த இணையதளம் கிராமப்புற புதுமை, தொழில்நுட்பம்,
-            உற்பத்தி மற்றும் வேலைவாய்ப்பு உருவாக்கத்தை ஊக்குவிக்கும்
-            சமூக முன்முயற்சியாகும்.
-        </p>
+English
 
-        <p>
-            இது எந்த அரசியல் கட்சி அல்லது தேர்தல் பிரச்சாரத்துடனும்
-            தொடர்புடையதல்ல.
-        </p>
+</a>
 
-        <hr>
+<a class="btn-secondary" href="ta/index.html">
 
-        <h3>English</h3>
+தமிழ்
 
-        <p>
-            This website is a community-driven initiative dedicated to
-            innovation, technology, manufacturing and rural employment.
-        </p>
-
-        <p>
-            It is not affiliated with any political party or election campaign.
-        </p>
-
-        <label class="agree">
-            <input type="checkbox" id="agree">
-            I understand and wish to continue.
-        </label>
-
-        <br><br>
-
-        <button id="continueBtn">
-            Enter the Initiative →
-        </button>
-
-    </div>
+</a>
 
 </div>
 
-<script src="assets/js/app.js"></script>
+</div>
 
 </body>
+
 </html>
